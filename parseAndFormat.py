@@ -25,6 +25,7 @@ for i in data['songs']:
 
     lyrics = i['lyrics'].removesuffix('Embed')
     lyrics = lyrics.split('Lyrics', 1)[1]
+    lyrics = lyrics.replace("You might also like[", "[")
     print(lyrics)
     lyrics = lyrics.replace("\n", "<br>")
 
